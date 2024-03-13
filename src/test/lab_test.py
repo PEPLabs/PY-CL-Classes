@@ -12,6 +12,13 @@ class TestLightbulb(unittest.TestCase):
         # Test if the lightbulb is initially on
         bulb_on = Lightbulb(True)
         self.assertTrue(bulb_on.get_state())
+        
+    def test_method_name(self):
+        method_name = "get_description"
+        class_methods = dir(Lightbulb)
+        self.assertIn(method_name, class_methods, f"Method '{method_name}' not found in Lightbulb class.")
+        self.assertTrue(callable(getattr(Lightbulb, method_name)), f"Method '{method_name}' is not callable.")
+
 
     def test_get_description(self):
         # Test description when the lightbulb is off

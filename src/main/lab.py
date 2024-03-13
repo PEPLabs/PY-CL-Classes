@@ -52,7 +52,7 @@ class Lightbulb:
      * 'off'. The function should then return "The bulb is on" or "The bulb is off" depending on whether the bulb is on or 
      * off.
      * 
-     * TODO: Create a function named 'getDescription' that returns "The bulb is on" or "The bulb is off", depending on
+     * TODO: Create a function named 'get_description' that returns "The bulb is on" or "The bulb is off", depending on
      * whether 'state' is true or false.
      */    
     """
